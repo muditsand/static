@@ -7,7 +7,8 @@ pipeline {
                 withAWS(region:'us-east-1',credentials:'blueocean') {
 
                     s3Upload(pathStyleAccessEnabled:true, payloadSigningEnabled: true, file:'index.html', bucket:'projec2jenkins')
-          }
+                    }
+            }
         }
     }
 }
